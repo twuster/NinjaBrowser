@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<!-- 
+    <item
+        android:id="@+id/url_bar"
+        android:actionLayout="@layout/url_bar"
+        android:showAsAction="ifRoom"
+        android:title="Url"> 
+    </item>-->
+    <item android:id="@+id/nfc" android:title="NFC"></item>
+    
+    <item
+        android:id="@+id/back"
+        android:title="Back">
+    </item>
+    
+    <item
+        android:id="@+id/forward"
+        android:title="Forward">
+    </item>
+    <item
+        android:id="@+id/bookmark"
+        android:title="Add to Bookmarks">
+    </item>
+    
+    <item
+        android:id="@+id/refresh"
+        android:title="Refresh">
+    </item>
+
+    <!--
+    <item 
+        android:id="@+id/all_tabs" 
+        android:showAsAction="always" 
+        android:title="Tabs"> 
+    </item>
+    -->
+    <item
+        android:id="@+id/new_tab"
+        android:title="New tab"/>
+    <item
+        android:id="@+id/bookmarks"
+        android:title="See all Bookmarks"/>
+    <item
+        android:id="@+id/menu_item_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/ic_menu_search"
+        android:showAsAction="collapseActionView"
+        android:title="Find in page...">
+    </item>
+    <!--
+    <item
+        android:id="@+id/progress_bar"
+        android:enabled = "true"
+        android:showAsAction="ifRoom"
+        android:title="Refresh"
+        android:actionViewClass="android.widget.ProgressBar">
+        
+    </item>
+    -->
+    
+    
+
+</menu>

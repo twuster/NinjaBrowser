@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ninja Browser</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="new_tab">New Tab</string>
+    <string name="back_description">Back</string>
+    <string name="refresh_description">Refresh</string>
+    <string name="forward_description">Forward</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="save_success">Gesture saved in %s</string>
+    <string name="gestures_empty">No gestures</string>
+    <string name="gestures_rename">Rename</string>
+    <string name="gestures_delete">Delete</string>
+    <string name="gestures_delete_success">Gesture deleted</string>
+    <string name="gestures_rename_title">Rename gesture</string>
+    <string name="gestures_rename_label">Gesture name</string>
+    <string name="gestures_error_loading">Could not load %s. Make sure you have storage available</string>
+    <string name="rename_action">OK</string>
+    <string name="cancel_action">Cancel</string>
+
+</resources>

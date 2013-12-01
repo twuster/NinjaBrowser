@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context=".ActionBarTabsPager" >
+
+    <!--
+    <ImageButton
+        android:id="@+id/bBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:minHeight="20dp"
+        android:minWidth="20dp"
+        android:layout_marginRight="-4.5dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginTop="-5dp"
+        android:src="@drawable/ic_back" 
+        android:contentDescription="@string/back_description"
+        />
+
+    <ImageButton
+        android:id="@+id/bForward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"  
+        android:layout_marginRight="-4.5dp"
+        android:layout_marginLeft="-4.5dp"   
+        android:layout_marginTop="-5dp"
+        android:layout_toRightOf="@+id/bBack"
+        android:src="@drawable/ic_fwd" 
+        android:contentDescription="@string/forward_description"
+        
+        />
+
+
+
+    -->
+    <!--
+     
+    <fragment
+        android:id="@+id/WebViewFragmentContainer"
+        android:name="com.example.safebrowser.MyFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-5dp"
+        android:text="WebViewFragmentContainer"/>
+
+
+    -->
+<!--  
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" />
+        
+        -->
+<!--  
+    <FrameLayout
+        android:id="@+id/WebViewFragmentContainer"
+        android:name="com.example.safebrowser.MyFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/progressBar"
+        
+        android:text="WebViewFragmentContainer"
+        tools:layout="@layout/main" />
+-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/WebViewFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:layout_below="@+id/progressBar"/>
+         <!--
+    <WebView
+        android:id="@+id/bWebView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-5dp"
+        android:layout_below="@+id/bBack"
+        android:text="WebView" /> 
+
+
+    -->
+    <!--
+    <ImageButton
+        android:id="@+id/bRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/bForward"
+        android:layout_marginRight="-4.5dp"
+        android:layout_marginLeft="-4.5dp" 
+        android:layout_marginTop="-5dp"
+        android:src="@drawable/ic_reload" 
+        android:contentDescription="@string/refresh_description"
+        />
+
+    <ImageButton
+        android:id="@+id/bGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bWebView"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_go"
+        android:layout_marginRight="-4dp"
+        android:layout_marginLeft="-4.5dp" 
+        android:layout_marginTop="-5dp"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/urlText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/bRefresh"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/bRefresh"
+        android:background="@null"
+        android:ems="40"
+        android:hint="Type URL here..."
+        android:inputType="textUri"
+        android:singleLine="true" />
+
+
+    -->
+	<ImageButton
+        android:contentDescription="Gestures"
+        android:background="@drawable/shuriken_selector"
+        android:id="@+id/gesture_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" 
+        android:alpha="0.5"/>
+
+</RelativeLayout>

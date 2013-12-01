@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<!-- 
+    <ImageButton
+        android:id="@+id/bBack"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-4.5dp"
+        android:layout_marginTop="-5dp"
+        android:layout_alignBottom="@+id/urlText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ic_back"
+        android:contentDescription="@string/back_description"
+        android:minHeight="20dp"
+        android:minWidth="20dp" />
+
+    <ImageButton
+        android:id="@+id/bForward"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/urlText"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-4.5dp"
+        android:layout_marginTop="-5dp"
+        android:layout_toRightOf="@+id/bBack"
+        android:background="@drawable/ic_fwd"
+        android:contentDescription="@string/forward_description" /> -->
+
+<!--  
+
+    	<WebView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/WebView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="WebView" />
+-->
+	<ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-6dp"
+        android:visibility="gone" />
+    <com.example.newbrowser.CustomWebView
+        android:id="@+id/WebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop = "true"
+        android:text="WebView" />
+<!-- 
+    <AutoCompleteTextView
+        android:id="@+id/urlText"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/bRefresh"
+        android:background="@null"
+        android:ems="40"
+        android:hint="Type URL here..."
+        android:imeOptions="flagNoExtractUi"
+        android:inputType="textUri"
+        android:scrollHorizontally="true"
+        android:singleLine="true" />
+ -->
+<!-- 
+    <ImageButton
+        android:id="@+id/bGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/WebView"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="-4.5dp"
+        android:layout_marginRight="-4dp"
+        android:layout_marginTop="-5dp"
+        android:src="@drawable/ic_go" />
+ -->
+<!--  
+    <ImageButton
+        android:id="@+id/delete_text"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/delete_tab"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/bookmark"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/delete_text"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/delete_text"
+        android:background="@drawable/bookmark"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/bRefresh"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="-4.5dp"
+        android:layout_marginTop="-5dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/bForward"
+        android:background="@drawable/ic_reload"
+        android:contentDescription="@string/refresh_description" />-->
+
+    
+
+</RelativeLayout>

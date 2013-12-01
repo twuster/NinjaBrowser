@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.newbrowser"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="17" />
+    
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.NFC" />
+    
+    <uses-feature android:name="android.hardware.nfc" android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ninja_icon"
+        android:label="@string/app_name" > <!-- 'Add This to Disable ActionBar android:theme="@android:style/Theme.NoTitleBar" -->
+        <provider
+            android:name="com.example.newbrowser.MyBookmarkContentProvider"
+            android:authorities="com.example.newbrowser.MyBookmarkContentProvider" >
+        </provider>
+        <provider
+            android:name="com.example.newbrowser.MyTabContentProvider"
+            android:authorities="com.example.newbrowser.MyTabContentProvider" >
+           
+        </provider>
+
+     <!--     <activity
+            android:name="com.example.safebrowser.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" 
+            android:theme = "@style/MyAppTheme"
+            >
+
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        <activity
+            android:name="com.example.newbrowser.ActionBarTabsPager"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" 
+            android:theme = "@style/MyAppTheme"
+            >
+
+            <!--  -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.newbrowser.BookmarkPopup"
+            android:configChanges="orientation|screenSize"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" 
+            android:label="@string/bookmarks" >
+        </activity>
+        <activity
+            android:name="com.example.newbrowser.BookmarkDetail"
+            android:configChanges="orientation|screenSize"
+            android:label="Bookmark Detail" >
+        </activity>
+        <activity
+            android:name="com.example.newbrowser.TabPopup"
+            android:configChanges="orientation|screenSize"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" 
+            android:label="Tabs" >
+        </activity>
+        <activity
+            android:name="com.example.newbrowser.GestureDetector"
+            android:configChanges="orientation|screenSize"
+            android:theme="@android:style/Theme.Holo.Light" 
+            android:label="Gestures" >
+        </activity>
+        <activity
+            android:name="com.example.newbrowser.CreateGestureActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@android:style/Theme.Holo.Light" 
+            android:label="Gestures" >
+        </activity>
+        <activity
+            android:name="com.example.newbrowser.GestureBuilderActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@android:style/Theme.Holo.Light" 
+            android:label="Gestures" >
+        </activity>
+        <activity
+            android:name="com.example.newbrowser.NFCActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@android:style/Theme.Holo.Light" 
+            android:label="NFC" >
+        </activity>
+    </application>
+
+</manifest>
